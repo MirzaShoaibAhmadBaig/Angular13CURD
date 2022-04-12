@@ -12,7 +12,7 @@ import { ApiService } from './services/api.service';
 
 export class AppComponent implements OnInit {
   title = 'AngularCURDWithAngularMaterial';
-
+  productLsit :any;
   constructor(private dialog :MatDialog, private apiservice : ApiService  ){
 
 
@@ -32,8 +32,9 @@ export class AppComponent implements OnInit {
 
    this.apiservice.getProduct().subscribe({
    next:(res)=>{
-   var productLsit = res;
-    console.log(res);
+     debugger;
+    this.productLsit = res;
+    console.log(this.productLsit);
    },
    error:(err)=>{
 alert("Error While Fatching the Records!");

@@ -21,18 +21,31 @@
 
   <h1 style="text-align: center;">Product List </h1>
 
-   <table class="table">
+   <table class="mat-elevation-z8 demo-table">
    <thead>
-<td>Name</td>
-<td>Category</td>
-<td>date</td>
-<td>Freshness</td>
-<td>Price</td>
-<td>Comments</td>
+     <th>Sr</th>
+<th>Name</th>
+<th>Category</th>
+
+<th>During Buying Status</th>
+<th>Price</th>
+<th>date</th>
+<th>Comments</th>
+<th>Action</th>
 
    </thead>
 <tbody>
+  
+<tr *ngFor="let item of productLsit; let i = index" style="border: 1ex; text-align:center;">
+ <td>{{i +1}}</td>
+  <td>{{item.ProductName}}</td>
+  <td>{{item.ProductCategory}}</td>
+  <td>{{item.fresh}}</td>
+  <td>{{item.price|date}}</td>
+  <td>{{item.date}}</td>
+  <td>{{item.comment}}</td>
 
+</tr>
 </tbody>
    </table>
 
