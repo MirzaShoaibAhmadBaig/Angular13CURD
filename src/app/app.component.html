@@ -8,9 +8,40 @@
       <mat-icon>supervised_user_circle</mat-icon>
     </button>
     <span>Angular 13 CURD Using Material UI</span>
-    <span class="example-spacer">Well come To My First Project</span>
+    <span class="example-spacer"></span>
    
-    <button mat-raised-button color="warn">Add Product</button>
+    <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
   </mat-toolbar>
 </p>
 
+<div class="container"> 
+<div style="margin: top 10px;">
+
+<mat-card>
+
+  <h1 style="text-align: center;">Product List </h1>
+
+   <table class="table">
+   <thead>
+<td>Name</td>
+<td>Category</td>
+<td>date</td>
+<td>Freshness</td>
+<td>Price</td>
+<td>Comments</td>
+
+   </thead>
+<tbody>
+
+</tbody>
+   </table>
+
+
+
+
+</mat-card>
+
+
+</div>
+
+</div>

@@ -1,0 +1,41 @@
+{
+  "ProductList": [
+    {
+      "ProductName": "ere",
+      "ProductCategory": "vagetables",
+      "fresh": "Second Hand",
+      "price": 34,
+      "comment": "sdfdsffds",
+      "date": "2022-04-20T19:00:00.000Z",
+      "id": 1
+    },
+    {
+      "ProductName": "Apple",
+      "ProductCategory": "furits",
+      "fresh": "Brand New",
+      "price": 50000,
+      "comment": "buy from mandi",
+      "date": "2022-04-07T19:00:00.000Z",
+      "id": 2
+    },
+    {
+      "ProductName": "test",
+      "ProductCategory": "vagetables",
+      "fresh": "Brand New",
+      "price": 5000,
+      "comment": "sdff",
+      "date": "2022-04-11T19:00:00.000Z",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
